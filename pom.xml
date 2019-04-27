@@ -1,0 +1,62 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.soojoe.scaffold</groupId>
+  <artifactId>spring-cloud-common-web</artifactId>
+  <version>1.0.0-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>spring-cloud-common-web</name>
+  <url>http://maven.apache.org</url>
+
+  <parent>
+    <groupId>org.springframework.cloud</groupId>
+    <artifactId>spring-cloud-starter-parent</artifactId>
+    <version>Finchley.RELEASE</version>
+    <relativePath/> <!-- lookup parent from repository -->
+  </parent>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <spring-cloud-common.version>1.0.0-SNAPSHOT</spring-cloud-common.version>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>com.soojoe.scaffold</groupId>
+      <artifactId>spring-cloud-common</artifactId>
+      <version>${spring-cloud-common.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-web</artifactId>
+      <scope>provided</scope>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <source>1.8</source>
+          <target>1.8</target>
+          <encoding>UTF-8</encoding>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
+  <!--<distributionManagement>-->
+    <!--<repository>-->
+      <!--<id>libs-releases</id>-->
+      <!--<url>??</url>-->
+    <!--</repository>-->
+    <!--<snapshotRepository>-->
+      <!--<id>libs-snapshots</id>-->
+      <!--<url>??</url>-->
+    <!--</snapshotRepository>-->
+  <!--</distributionManagement>-->
+</project>
